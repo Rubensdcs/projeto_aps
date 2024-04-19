@@ -21,9 +21,21 @@ header {
 .header-right a {
     color: #F4F5F4;
     text-decoration: none;
-    margin-left: 20px;
+    margin-left: 30px;
 }
-  
+
+.nav_ {
+  border-bottom: solid 1px rgb(200, 200, 200, 0.5);
+  font-size: 15px;
+  border-radius: 20px;
+  transition: 0.1s;
+}
+
+.nav_:hover {
+  box-shadow: 0 0.2em 0.2em 0.1px #F4F5F4;  
+  background-color: rgb(53,94,59, 0.3);
+  padding: 10px;
+}
 
 #home-content {
     color: #F4F5F4;
@@ -63,19 +75,32 @@ section {
   overflow: hidden;
 }
 
-.sobre-item-inner {
-  display: flex;
-  justify-content: space-between; 
-  width: 100%;
+.sobre-item-inner h3{
+  text-align: center;
+  font-size: 2em
 }
 
-.sobre-item-inner img , p{
-  width: 50%;
-  margin: 2%;
+.sobre-item-inner {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin: 2% 0 2%;
 }
+
+.sobre-item-inner img {
+  box-shadow: 0.2em 0.2em 20px black;
+  width: 90%;
+  margin: auto;
+}
+
 
 .ajude-content{
     background-color: #015450;
+    padding: 20px;
+    color:white
+}
+
+.ajude-content h3 {
+  font-size: 5em;
 }
 
 footer {
